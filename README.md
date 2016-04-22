@@ -3,14 +3,18 @@
 
 # Jenkinsでやった事
 
-- install
+- インストール(構築)
+  - 手動
+  - Chefによる自動構築 -> https://github.com/yhidetoshi/chef_mac/tree/master/cookbooks/jenkins 
+  - Fabricによる自動構築 -> https://github.com/yhidetoshi/Jenkins/tree/master/install_by_Fabric
+  - Dockerで構築 -> https://github.com/yhidetoshi/Docker#mac環境でnginxjenkinsをリバースプロキシ環境を構築する
+
+- OpenLDAP連携(ログイン機能)
 - Jenkinsのビルド実行、エラー処理等の通知(Slackへ)
 - script実行によるサービス監視
 - Ruby/Cucumberを仕込み定期的ビルド
 - ビルドパイプライン
-- DockerでJenkins構築と接続
 
-->[https://github.com/yhidetoshi/Docker#mac環境でnginxjenkinsをリバースプロキシ環境を構築する]
 
 - **Jenkinsのインストール(手動)**
 
