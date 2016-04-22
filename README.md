@@ -15,8 +15,7 @@
 - Ruby/Cucumberを仕込み定期的ビルド
 - ビルドパイプライン
 
-
-- **Jenkinsのインストール(手動)**
+#### Jenkinsのインストール(手動)
 
 　OS:CentOS6
 ```
