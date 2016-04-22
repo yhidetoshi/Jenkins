@@ -8,6 +8,7 @@
 - script実行によるサービス監視
 - Ruby/Cucumberを仕込み定期的ビルド
 - ビルドパイプライン
+- DockerでJenkins->[https://github.com/yhidetoshi/Docker#mac環境でnginxjenkinsをリバースプロキシ環境を構築する]
 
 - **Jenkinsのインストール(手動)**
 
