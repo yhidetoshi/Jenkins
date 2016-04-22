@@ -4,7 +4,7 @@
 # Jenkinsでやった事
 
 - インストール(構築)
-  - 手動
+  - 手動 -> https://github.com/yhidetoshi/Jenkins/blob/master/README.md#jenkinsのインストール手動
   - Chefによる自動構築 -> https://github.com/yhidetoshi/chef_mac/tree/master/cookbooks/jenkins 
   - Fabricによる自動構築 -> https://github.com/yhidetoshi/Jenkins/tree/master/install_by_Fabric
   - Dockerで構築 -> https://github.com/yhidetoshi/Docker#mac環境でnginxjenkinsをリバースプロキシ環境を構築する
