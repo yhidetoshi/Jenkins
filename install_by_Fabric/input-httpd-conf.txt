@@ -1,0 +1,8 @@
+NameVirtualHost *:80
+<VirtualHost *:80>
+  ServerName 192.168.33.11
+  ProxyRequests Off
+  ProxyPreserveHost On
+  ProxyPass / ajp://127.0.0.1:8009/
+  ProxyPassReverse / ajp://127.0.0.1:8009/
+</VirtualHost>
