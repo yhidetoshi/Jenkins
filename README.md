@@ -3,6 +3,10 @@
 
 # Jenkinsでやった事
 
+**[AWSとJenkins]**
+
+https://github.com/yhidetoshi/AWS/tree/master/Script-For-Jenkins
+
 **[インストール(構築)]**
 
 |方法    |リンク         |
