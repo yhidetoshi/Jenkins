@@ -44,3 +44,56 @@ JENKINS_ARGS="--prefix=/jenkins"
 # chkconfig jenkins on
 ```
 
+## JenkinsのAPIを使って見る
+
+- ユーザのトークン発行
+  - `[top] --> [開発者] --> [開発者を選択] --> [config] --> [APIトークン] --> [APIトークンの表示]`
+
+`$ curl --user <username>:<token> http://<jenkins_url>/api/json?pretty=true | jq 'jobs'`
+```
+[
+  {
+    "_class": "org.jenkinsci.plugins.workflow.job.WorkflowJob",
+    "name": "AWS-Instance-AutoDev",
+    "url": "http://<jenkins_url>/job/AWS-Instance-AutoDev/",
+    "color": "notbuilt"
+  },
+  {
+    "_class": "hudson.model.FreeStyleProject",
+    "name": "Create-Instance",
+    "url": "http://<jenkins_url>/job/Create-Instance/",
+    "color": "blue"
+  },
+  {
+    "_class": "hudson.model.FreeStyleProject",
+    "name": "Create-Instance-Nogithub",
+    "url": "http://<jenkins_url>/job/Create-Instance-Nogithub/",
+    "color": "blue"
+  },
+  {
+    "_class": "hudson.model.FreeStyleProject",
+    "name": "knife-ec2",
+    "url": "http://<jenkins_url>/job/knife-ec2/",
+    "color": "red"
+  },
+  {
+    "_class": "hudson.model.FreeStyleProject",
+    "name": "Start-Instance",
+    "url": "http://<jenkins_url>/job/Start-Instance/",
+    "color": "blue"
+  },
+  {
+    "_class": "hudson.model.FreeStyleProject",
+    "name": "Stop-Instance",
+    "url": "http://<jenkins_url>/job/Stop-Instance/",
+    "color": "blue"
+  },
+  {
+    "_class": "hudson.model.FreeStyleProject",
+    "name": "Terminate-Instance",
+    "url": "http://<jenkins_url>/job/Terminate-Instance/",
+    "color": "blue"
+  }
+]
+```
+
