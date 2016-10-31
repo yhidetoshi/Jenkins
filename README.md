@@ -49,6 +49,8 @@ JENKINS_ARGS="--prefix=/jenkins"
 - ユーザのトークン発行
   - `[top] --> [開発者] --> [開発者を選択] --> [config] --> [APIトークン] --> [APIトークンの表示]`
 
+- ?depth=1でdepthを渡すと情報量を変更することができる。※ 数字が大きければ情報量が増す。
+
 `$ curl --user <username>:<token> http://<jenkins_url>/api/json?pretty=true | jq 'jobs'`
 ```
 [
