@@ -99,3 +99,11 @@ JENKINS_ARGS="--prefix=/jenkins"
 ]
 ```
 
+## Jenkinsのテーマを変更する
+
+https://cdn.rawgit.com/afonsof/jenkins-material-theme/gh-pages/dist/material-<COLOR>.css
+
+http://afonsof.com/jenkins-material-theme/に記載されている slect-your-clorの記載ある名前を記述する。
+
+- URL of theme CSSに貼り付ける
+
