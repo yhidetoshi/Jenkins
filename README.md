@@ -22,6 +22,15 @@ https://github.com/yhidetoshi/AWS/tree/master/Script-For-Jenkins
 - script実行によるサービス監視
 - Ruby/Cucumberを仕込み定期的ビルド
 - ビルドパイプライン
+- aws-sdk-goで作った自作CLIツールで、
+  - AWS-AutoScalingに自動デプロイ
+  - Jenkins経由のオペレーション
+    - ELBにインスタンスをでアタッチ・デタッチ
+    - EC2/RDSインスタンスの停止・起動・削除
+    - AMI焼き・削除・ステータス取得
+    - S3のバケットサイズの合計取得/publicバケットの検知
+    - https://github.com/yhidetoshi/go-awscli-tool
+
 
 #### Jenkinsのインストール(手動)
 ===
